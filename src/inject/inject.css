@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Urdu';
+    src: local('Jameel Noori Nastaleeq'), url('/src/inject/Mehr.ttf');
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Urdu';
+    src: local('Arial'),local('Calibri');
+    unicode-range: U+0020-007F;
+}
+
+:lang(ur) 	{
+    font-family: 'Urdu'!important;
+    direction:rtl;
+}
+*[dir="rtl"]{
+    font-family: 'Urdu'!important;
+    direction:rtl;
+}
+#facebook .system-fonts--body div{
+    font-family: Urdu, Helvetica, 'inherit' !important;
+    font-size-adjust: 0.5;
+    line-height: normal;
+}

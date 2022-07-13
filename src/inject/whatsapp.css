@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Urdu';
+    src: local('Jameel Noori Nastaleeq'),url('/src/inject/Mehr.ttf');
+    /* Mehr Nastalique Font - Courtesy of ITU Center for Speach And Lanuage Technologies - csalt.itu.edu.pk */
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Urdu';
+    src: local('Arial'),local('Calibri');
+    unicode-range: U+0020-007F;
+}
+* {
+    font-family: 'Urdu'!important;
+}
+*[dir="rtl"], li span a, div a, div b, p{
+    font-family: 'Urdu'!important;
+    font-size: 1.1em !important;
+    line-height: 1.5em !important;
+}
+li a{
+    font-family: 'Urdu'!important;
+    font-size: 1.3em !important;
+}

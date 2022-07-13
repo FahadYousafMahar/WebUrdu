@@ -1,0 +1,415 @@
+﻿@font-face {
+    font-family: 'Urdu';
+    src: local('Jameel Noori Nastaleeq'),url('/src/inject/Mehr.ttf');
+    /* Mehr Nastalique Font - Courtesy of ITU Center for Speach And Lanuage Technologies - csalt.itu.edu.pk */
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Urdu';
+    src: local('Arial'),local('Calibri');
+    unicode-range: U+0020-007F;
+}
+* {
+    font-family: 'Urdu';
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+
+    background: #675F4C;
+}
+
+body {
+    font-family: 'Urdu';
+    font-size: 87.5%;
+    line-height: 24px;
+    color: #222;
+    width:650px;
+    min-width:650px;
+}
+.menu {
+    margin:0px auto;
+    width:100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.menu button {
+    height:20px;
+    line-height: 0px;
+    padding-top:10px;
+    padding-bottom:12px;
+    margin:5px 3px 0px 3px;
+}
+button, .button {
+  cursor: pointer;
+  background: #E2C463;
+  border: 0px;
+  padding: 5px;
+  border-bottom: 3px solid #D0A358;
+}
+
+p {
+    margin: 0.05em -1px}
+
+h1 {
+    font-size: 1.2857em;
+    margin: .75em 0;
+    color: #057cb5
+}
+
+h3 {
+    font-size: 1.1em;
+    margin: .75em 0;
+    color: #057cb5
+}
+
+h4 {
+    text-align: center
+}
+
+img {
+    border: 0
+}
+
+table {
+    border-spacing: 0
+}
+
+td {
+    vertical-align: top
+}
+#editor {
+    font-family: "Urdu";
+    font-size: 15px;
+    line-height: 45px;
+}
+
+rb {
+    color: #057cb5;
+    font-size: 100%;
+    margin-left: .5em
+}
+
+rt {
+    color: #e0115f;
+    font-size: 100%
+}
+
+.clear {
+    clear: both
+}
+
+.middle {
+    vertical-align: middle
+}
+
+.top {
+    vertical-align: top
+}
+
+#footer {
+    margin-top: 4em;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    font-size: .75em
+}
+
+ul.menu {
+    list-style: none;
+    padding-top: 1em
+}
+
+li.menuitem {
+    display: inline;
+    padding: 0;
+    margin: 0 0 0 1em
+}
+
+li.activemenuitem a {
+    border-bottom: 1px solid #3C0
+}
+
+#action {
+    text-align: left
+}
+
+#action button {
+    padding: 5px 10px;
+    vertical-align: middle;
+    line-height: 18px
+}
+
+#shrink,
+#enlarge {
+    width: 24px
+}
+
+a.soft_button {
+    border: 1px solid lightblue;
+    margin-left: 3px;
+    padding: 0 2px;
+    white-space: nowrap
+}
+.help {
+    display:none;
+    top:20px;
+    width: 75%;
+    position: fixed;
+    left: 50%;
+    margin-left: -37.5%;
+    background: #DBDBDB;
+    box-shadow:0px 0px 5px;
+    padding:20px;
+    z-index:99;
+    font-size: 14px;
+}
+.help>.btn-help {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #F00;
+  background: #FAFAFA;
+  border: 0px;
+  padding: 5px;
+}
+#share {
+    width: 340px;
+    margin: 2em auto 1em auto;
+    text-align: center
+}
+
+div.share {
+    float: left
+}
+
+#fshare {
+    width: 127px;
+    margin-top: -4px;
+    margin-right: 20px
+}
+
+#tshare {
+    width: 100px
+}
+
+#gshare {
+    width: 90px
+}
+
+#share-buttons,
+#share-buttons:visited {
+    background-color: #057cb5;
+    padding: .25em 1em;
+    color: #fff
+}
+
+#share-buttons:hover {
+    text-decoration: none;
+    background-color: #04628e
+}
+
+#archived {
+    font-size: .85em;
+    margin: .35em 0
+}
+
+#fcomments {
+    display: block;
+    text-align: center;
+    background-color: #f0f0f0
+}
+
+.ad-label {
+    font-size: .65em
+}
+
+.button {
+    display: inline-block;
+    padding: 0 5px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px
+}
+
+input[type=number],
+input[type=text],
+textarea {
+    min-height: 200px;
+    padding: 10px 8px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+#keyboard {
+      display: none;
+      margin: 10px auto;
+      /* width: 50%; */
+      zoom: 1;
+      position: relative;
+      bottom: 0px;
+      left: 0px;
+      background: #675F4C;
+      padding:5px;
+}
+.hide-keyboard {
+    width:100%;
+}
+#branah-keyboard {
+    line-height: 20px;
+    font-size: 1.1em
+}
+
+#branah-keyboard button {
+    float: left;
+    display: block;
+    margin: 1px;
+    height: 3em;
+    text-align: center;
+    color: gray
+}
+
+#branah-keyboard .branah-label-natural {
+    color: #e0115f;
+    font-size:1.1em;
+}
+
+#branah-keyboard .branah-label-shift {
+    color: #057cb5
+}
+
+#branah-keyboard .branah-label-natural,
+#branah-keyboard .branah-label-shift {
+    margin-top: -5px;
+    line-height: 20px;
+    text-align: center;
+    cursor: default
+}
+
+#branah-keyboard .branah-label-reference {
+    color: gray;
+    font-size: .9em;
+    line-height: 12px;
+    text-align: left;
+    cursor: default
+}
+
+#branah-k29 .branah-label-reference,
+#branah-k32 .branah-label-reference {
+    color: #000
+}
+
+#branah-keyboard .branah-recessed span {
+    color: #3C0
+}
+
+#branah-keyboard .branah-recessed-hover span {
+    color: #ffd800
+}
+
+#branah-keyboard .branah-clear {
+    clear: both
+}
+
+#branah-keyboard {
+    width: 630px;
+    margin: 0px auto;
+}
+#branah-keyboard button {
+    line-height: 2.75em
+}
+#branah-keyboard .branah-key {
+    width: 40px
+}
+#branah-backspace {
+    width: 78px
+}
+#branah-tab {
+    width: 62px
+}
+#branah-k25 {
+    width: 56px
+}
+#branah-caps-lock {
+    width: 76px
+}
+#branah-enter {
+    width: 84px
+}
+#branah-left-shift {
+    width: 46px
+}
+#branah-right-shift {
+    width: 114px
+}
+#branah-space {
+    width: 246px;
+    text-align: center
+}
+#branah-right-ctrl,
+#branah-right-alt,
+#branah-escape {
+    width: 62px
+}
+#branah-left-ctrl,
+#branah-left-alt,
+#branah {
+    width: 60px
+}
+a:link { color: black;text-decoration:none; } /* mouse over link */ a:hover { color: red; text-decoration:none;} /* selected link */ a:active { color: black;text-decoration:none; }a:visited { 
+    color: black;
+}
+.foo a:link a:visited {color: #222;}a:hover {color: red;}
+/*  */
+.faw a:hover{color:rgb(213, 142, 28);}.faw a:link,.faw a:visited{color:#fff;}body{
+  background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+}
+.help {
+    border-bottom:5px solid rgb(213, 142, 28);
+    display:block;
+    bottom:10%;
+    width: 100%;
+    position: sticky;
+    left: 0px;
+    margin-left:0%;
+    background: rgba(0,0,0,0.3);
+    box-shadow:2px 2px 5px;
+    padding:20px;
+    z-index:99;
+    align:middle;
+    font-size: 20px;
+}
+.foo{
+  color:white;
+}
+.faw{
+  font-family:Rajdhani;
+  color:#ffffff;
+  font-size:14px;
+}
+.main{
+      font-family:Rajdhani;
+      font-weight: 400;
+      color:#ffffff;
+
+}
+.img{
+    background: url(../icons/icon48.png) no-repeat top center;
+    width: 100%;
+    height: 100%;
+}
+         

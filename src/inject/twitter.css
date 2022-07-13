@@ -1,0 +1,41 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+@font-face {
+    font-family: 'Urdu';
+    src: local('Jameel Noori Nastaleeq'),url('/src/inject/Mehr.ttf');
+    /* Mehr Nastalique Font - Courtesy of ITU Center for Speach And Lanuage Technologies - csalt.itu.edu.pk */
+    unicode-range: U+0600-06FF;
+}
+@font-face {
+    font-family: 'Urdu';
+    src: local('Arial'),local('Calibri');
+    unicode-range: U+0020-007F;
+}
+
+:lang(ur) 	{
+	font-family: 'Urdu'!important;
+	direction:rtl;
+    font-size: 1.1rem;
+    line-height: 2em!important;
+
+}
+
+*[dir="rtl"], .tweet-text-rtl, .u-dir[dir="rtl"] {
+	font-family: 'Urdu'!important;
+    font-size: 1.1rem;
+    direction:rtl;
+    line-height: 2em!important;
+
+}
+.TweetTextSize:lang(ur) {
+    font-size: 1.1em;
+    line-height: 2em!important;
+
+}
+
+h1.AdaptiveSearchTitle-title[dir="rtl"] {
+    font-size: 1.7em;
+    line-height: 2em!important;
+
+}

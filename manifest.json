@@ -1,0 +1,42 @@
+{
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    },
+    "default_popup": "src/inject/app/index.html",
+    "default_title": "Urdu for Web"
+  },
+  "content_scripts": [ {
+    "css": [ "src/inject/inject.css" ],
+    "exclude_matches": ["*://twitter.com/*", "*://ur.wikipedia.org/*", "*://pnb.wikipedia.org/*", "*://quran.com/*" ],
+    "matches": [ "*://*/*" ]
+  },{
+    "css": [ "src/inject/twitter.css" ],
+    "matches": [ "*://twitter.com/*" ]
+  },{
+    "css": [ "src/inject/whatsapp.css" ],
+    "matches": ["*://web.whatsapp.com/*"]
+  },{
+    "css": [ "src/inject/google.css" ],
+    "matches": [ "*://*.google.com/*", "*://*.google.com.pk/*", "*://*/search?*", "*://google.com.pk/*", "*://*/#q*" ]
+  } ],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "default_locale": "en",
+  "description": "Nastaleeq Font For Web - Supports Google, Facebook, Twitter, Whatsapp , Wikipeadia and many other wbsites which support Urdu language Tag or RTL direction.\r\n Uses :  Mehr Nastalique Font - Courtesy of Center for Speach And Lanuage Technologies (Previously @ ITU) - https://www.c-salt.org/downloads/mehr-e-nastaliq-font ",
+  "homepage_url": "http://github.com/fahadyousafmahar/weburdu/",
+  "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png"
+  },
+  "manifest_version": 2,
+  "name": "Urdu for Web",
+  "short_name": "Urdu",
+  "permissions": [
+    "*://*/*"
+  ],
+  "version": "3.0.0",
+  "web_accessible_resources": ["src/inject/*.ttf"],
+  "incognito":"spanning"
+}
